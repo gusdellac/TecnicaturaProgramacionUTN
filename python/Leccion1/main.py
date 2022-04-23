@@ -84,6 +84,3 @@ print("Mi día estuvo de:", calificacion)
 titulo = input("Ingrese el nombre del libro: ")
 autor = input("Ingrese el autor del libro: ")
 print(titulo, "fue escrito por:", autor)
-
-
-
