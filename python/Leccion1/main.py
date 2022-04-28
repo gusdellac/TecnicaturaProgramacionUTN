@@ -1,5 +1,5 @@
+"""
 # VARIABLES
-
 variable = 1
 miVariable = 2
 print(variable + miVariable)
@@ -84,3 +84,88 @@ print("Mi día estuvo de:", calificacion)
 titulo = input("Ingrese el nombre del libro: ")
 autor = input("Ingrese el autor del libro: ")
 print(titulo, "fue escrito por:", autor)
+"""
+
+"""
+# Operadores aritméticos
+operandoA = 8
+operandoB = 5
+suma = operandoA + operandoB
+print("Resultado de la suma:", suma)
+print(f"El resultado de la suma es: {suma}")  # utilizamos la f (format) para interpolar la variable en un string
+
+resta = operandoA - operandoB
+print(f"El resultado de la resta es: {resta}")
+
+multiplicacion = operandoA * operandoB
+print(f"El resultado de la multiplicación: {multiplicacion}")
+
+division = operandoA / operandoB
+print(f"El resultado de la división es: {division}")  # resultado tipo float
+division = operandoA // operandoB  # devuelve un resultado de tipo int
+print(f"El resultado de la división (int) es: {division}")
+
+modulo = operandoA % operandoB
+print(f"El resultado de la división o residuo (modulo) es: {modulo}")
+
+exponente = operandoA ** operandoB  # exponenciación
+print(f"El resultado de la potencia es: {exponente}")
+
+
+
+alto = int(input("Digite el alto del rectángulo: "))
+ancho = int(input("Digite el ancho del rectángulo: "))
+area = alto * ancho
+perimetro = (alto + ancho)*2
+print(f"El área del rectángulo es: {area}")
+print(f"El perímetro del rectángulo es: {perimetro}")
+
+miVariable3 = 10
+print(miVariable3)
+# Operadores de reasignación
+miVariable3 = miVariable3 + 1
+print(miVariable3)
+miVariable3 += 1  # forma resumida de reasignación e incremento (miVar = miVar + 1)
+print(miVariable3)
+miVariable3 -= miVariable3 - 2  # forma resumida de reasignación y resta (miVar = miVar - 2)
+print(miVariable3)
+miVariable3 *= 3  # reasignación y producto (miVar = miVar * 3)
+print(miVariable3)
+miVariable3 /= 2  # reasignación y división (miVar = miVar / 2)
+print(miVariable3)
+
+# Operadores de Comparación
+# Devuelven un tipo de dato booleano
+d = 4
+b = 2
+resultado = d == b  # operador de igualdad
+print(resultado)
+resultado = d != b  # operador de desigualdad
+print(resultado)
+resultado = d > b  # operador de mayor que
+print(resultado)
+resultado = d < b  # operador de menor que
+print(resultado)
+resultado = d >= b  # operador mayor igual que
+print(resultado)
+resultado = d <= b  # operador menor igual que
+print(resultado)
+"""
+
+# Par - impar
+
+numero = int(input("Digite un número: "))
+print(f"El residuo de la división es: {numero % 2}")
+if numero % 2 == 0:  # en python en los if y else en lugar de utilizar {} para ingresar un bloque de código
+    # afectado por el condicional se utilizan los (:)
+    print(f"El valor de la variable es: {numero} , es un número par")
+else:
+    print(f"El valor de la variable es: {numero} , es un número impar")
+
+edad = int(input("Digite su edad: "))
+if edad >= 18:
+    print(f"La edad digitada es: {edad} años, es mayor de edad")
+else:
+    print(f"La edad digitada es: {edad} años, es menor de edad")
+
+
