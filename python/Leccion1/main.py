@@ -152,6 +152,7 @@ resultado = d <= b  # operador menor igual que
 print(resultado)
 """
 
+"""
 # Par - impar
 
 numero = int(input("Digite un número: "))
@@ -167,5 +168,102 @@ if edad >= 18:
     print(f"La edad digitada es: {edad} años, es mayor de edad")
 else:
     print(f"La edad digitada es: {edad} años, es menor de edad")
+"""
+"""
+# Operadores lógicos
+
+# operador and
+a = True
+b = False
+resultado = a and b
+print(resultado)
+
+# operador or
+resultado = a or b
+print(resultado)
+
+# operador not
+resultado = not a
+print(resultado)
+
+# Ejercicio AND
+
+numIngresado = int(input("Digite un número: "))
+
+if (numIngresado >= 0) and (numIngresado <= 5):
+    print(f"El número {numIngresado} se encuentra dentro del rango")
+else:
+    print(f"El número {numIngresado} no se encuentra dentro del rango")
+
+#  Ejercicio OR
+
+vacaciones = input("El padre está de vacaciones, ingrese si o no: ")
+
+if vacaciones == "si":
+    vacaciones = True
+else:
+    vacaciones = False
+
+diaLibre = input("El padre tiene el día libre, ingrese si o no: ")
+
+if diaLibre == "si":
+    diaLibre = True
+else:
+    diaLibre = False
+
+if vacaciones or diaLibre:
+    print("Si puede asistir al juego de su hijo")
+else:
+    print("No puede asistir al juego de su hijo")
+"""
+
+"""
+# Ejercicio NOT
+
+# Ejercicio Rango entre 20-29 y 30-39 años
+
+edad = int(input("Ingrese su edad: "))
+
+if ((edad >= 20) and (edad < 30)) or ((edad >= 30) and (edad < 40)):
+    print("Estas dentro del rango")
+else:
+    print("No estas dentro del rango")
+
+edad = int(input("Ingrese su edad: "))
+
+if (20 <= edad < 30) or (30 <= edad < 40):  # Sintaxis simplificada operador AND
+    print("Estas dentro del rango")
+else:
+    print("No estas dentro del rango")
+"""
+"""
+# Ejercicio: El mayor de dos números
+numero1 = int(input("Digite el primer número: "))
+numero2 = int(input("Digite el segundo número: "))
+
+if numero1 > numero2:
+    print(f"El número mayor es el primer número ingresado: {numero1}")
+elif numero1 < numero2:
+    print(f"El número mayor es el segundo número ingresado: {numero2}")
+else:
+    print(f"Los números ingresados son iguales")
+"""
+# Ejercicio Tienda de Libros
+nombre = input("Digite el nombre del libro: ")
+varID = int(input("Digite el ID del libro: "))
+precio = float(input("Digite el precio del libro: "))
+envioGratuito = input("Indicar si el libro es gratuito (si/no): ")
+if envioGratuito == "si":
+    envioGratuito = True
+elif envioGratuito == "no":
+    envioGratuito = False
+else:
+    envioGratuito = "El valor es incorrecto, debe escribir si o no"
+print(f"""
+        Nombre: {nombre}
+        Id: {varID}
+        Precio: {precio}
+        Envío gratuito?: {envioGratuito}
+    """)
 
 
