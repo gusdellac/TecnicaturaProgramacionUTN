@@ -110,13 +110,14 @@ public class HolaMundoGit {
         //colocando byte + variable definida. El (byte) obliga al compilador a que 
         //convierta el dato asignado a tipo byte. Si el valor asignado supera el máximo
         //o mínimo permitido se generará pérdida de precisión
+        //8 bits
         System.out.println("numEnteroByte = " + numEnteroByte);
         System.out.println("valor mínimo del Byte:" + Byte.MIN_VALUE);//-128
         System.out.println("valor máximo del Byte:" + Byte.MAX_VALUE);//127
         //Byte.MIN_VALUE para poder evaluar los mínimos y maximos del tipo de dato
         //es necesario que utilicemos la clase Byte
         
-        short numEnteroShort = 32767;
+        short numEnteroShort = 32767; //16 bits
         System.out.println("numEnteroShort = " + numEnteroShort);
         System.out.println("Valor mínimo del Short:" + Short.MIN_VALUE); //-32768
         System.out.println("Valor máximo del Short:" + Short.MAX_VALUE); //32767
@@ -129,23 +130,64 @@ public class HolaMundoGit {
         
         long numEnteroLong = 9223372036854775807L; //Java por defecto asigna el máximo de números enteros
         //a los int, por lo que al asignar un número tipo long es necesario colocar
-        //la L al final del número.
+        //la L al final del número. 64 bits
         System.out.println("numEnteroLong = " + numEnteroLong);
         System.out.println("Valor mínimo del long:" + Long.MIN_VALUE); //-9223372036854775808
         System.out.println("Valor mínimo del long:" + Long.MAX_VALUE); //9223372036854775807
         */
         
+        /*
         float numFloat = (float) 3.4028235E38F; //Por defoult java asigna los datos decimales al tipo double
-        //se forza a float usando (float) o F al final del número.
+        //se forza a float usando (float) o F al final del número. 32 bits
         System.out.println("numFloat = " + numFloat);
         System.out.println("El valor mínimo de float:" + Float.MIN_VALUE); //1.4E-45
         System.out.println("El valor máximo de float:" + Float.MAX_VALUE); //3.4028235E38
         
         
-        double numDouble = 1.7976931348623157E308D;
+        double numDouble = 1.7976931348623157E308D; //64 bits
         System.out.println("numDouble = " + numDouble);
         System.out.println("El valor mínimo del double:" + Double.MIN_VALUE); //4.9E-324
         System.out.println("El valor máxmio del double:" + Double.MAX_VALUE); //1.7976931348623157E308
+        */
+        
+        //Inferencia de tipos var y tipos primitivos
+        /*
+        var numEntero = 20; //por default las literales enteras son de tipo int
+        System.out.println("numEntero = " + numEntero);
+        var numFloat = 10.0F; //por default las literales con decimales son de tipo double
+        System.out.println("numFloat = " + numFloat);
+        var numDouble = 10.0;
+        System.out.println("numDouble = " + numDouble);
+        
+        /*breakpoint (punto de ruptura) se utiliza para realizar el paso a paso desde la línea seleccionada
+        Usamos click derecho y opción debug file */
+        
+        //Tipos primitivos char
+        
+        char miVariableChar = 'a'; //notar que la asignación a char se realiza entre ('') 
+        // tipo char 16 bits puede almacenar un caracter y valores decimales
+        System.out.println("miVariableChar = " + miVariableChar);
+        
+        char varCaracter = '\u0024'; //Indicamos a Java la asignación con el código unicode
+        System.out.println("varCaracter = " + varCaracter);
+        char varCaracterDecimal = 36; //Valor decimal del juego de caracteres unicode
+        System.out.println("varCaracterDecimal = " + varCaracterDecimal);
+        char varCaracterSimbolo = '$'; //caracter especial, podemos copiar y pegar desde unicode
+        System.out.println("varCaracterSimbolo = " + varCaracterSimbolo);
+        
+        //inferencia de tipo
+        var varCaracter1 = '\u0024';
+        System.out.println("varCaracter1 = " + varCaracter1);
+        var varCaracterDecimal1 = (char)36; //olbigamos a que asigne el valor como tipo char
+        System.out.println("varCaracterDecimal1 = " + varCaracterDecimal1);
+        var varCaracterSimbolo1 = '$';
+        System.out.println("varCaracterSimbolo1 = " + varCaracterSimbolo1);
+        
+        int varEnteroChar = '$'; //nos muestra el valor decimal asociado al símbolo
+        System.out.println("varEnteroChar = " + varEnteroChar);
+        int caracterChar = 'b'; //nos muestra el valor decimal asociado al símbolo
+        System.out.println("caracterChar = " + caracterChar);
+        
         
     }
 
