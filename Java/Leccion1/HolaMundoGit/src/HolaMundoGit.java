@@ -164,6 +164,7 @@ public class HolaMundoGit {
         
         //Tipos primitivos char
         
+        /*
         char miVariableChar = 'a'; //notar que la asignación a char se realiza entre ('') 
         // tipo char 16 bits puede almacenar un caracter y valores decimales
         System.out.println("miVariableChar = " + miVariableChar);
@@ -187,7 +188,62 @@ public class HolaMundoGit {
         System.out.println("varEnteroChar = " + varEnteroChar);
         int caracterChar = 'b'; //nos muestra el valor decimal asociado al símbolo
         System.out.println("caracterChar = " + caracterChar);
+        */
         
+        //Tipos primitivos tipos booleanos
+        /*
+        var varBool = false;  //los valores booleanos (verdadero/falso) se asigna true/ false. (en python True/False)
+        System.out.println("varBool = " + varBool);
+        
+        if(varBool){
+            System.out.println("La bandera es verde");  
+        }
+        else{
+            System.out.println("La bandera es roja");
+        }
+        
+        //Algoritmo: ¿Es mayor de edad?
+        var edad = 28; //Java infiere que la literal es de tipo int
+        //var adulto = edad >= 18; //Expresión booleana. Java infiere tipo de dato booelano
+        if(edad >= 18){ //colocamos la expresión lógica en el condicional y nos ahorramos una línea de código
+            //el if analizará la expresión y en caso de ser true ejecutará el código dentro del if,sino pasa al else
+            System.out.println("Eres mayor de edad");
+        }
+        else{
+            System.out.println("Eres menor de edad");
+        }
+        */
+        
+        //Conversión de tipos primitivos String a Int y Double
+        /*
+        var edad = Integer.parseInt("20"); //convertimos un dato tipo str a int
+        System.out.println("edad = " +(edad + 1)); //a la variable edad tipo int le sumamos 1 y la imprimimos
+        var valorPI = Double.parseDouble("3.1416"); //convertimos dato str a double
+        System.out.println("valorPI = " + valorPI); //lo imprimimos en consola
+        var strAfloat = Float.parseFloat("10.5");
+        System.out.println("strAfloat = " + strAfloat);
+        
+        //Pedir un valor
+        var entrada = new Scanner(System.in); // clase scanner (parámetro.atributo)
+        // el dato a ingresar es de tipo str, java infiere el dato y lo asigna a var entrada
+        System.out.println("Digite su edad:");
+        edad = Integer.parseInt( entrada.nextLine()); // convertimos int(obejeto 'entrada'. método 'nextLine')
+        System.out.println("edad = " + edad);
+        */
+        
+        //Conversión de tipos primitivos 
+        var edadTexto = String.valueOf(10); // Int a String. Clase String. método valueOf(int)
+        System.out.println("edadTexto = " + edadTexto);
+        
+        var fraseChar = "programadores".charAt(10); //extraemos un carácter de la cadena
+        //.charAt(índice) método para extraer el caracter
+        System.out.println("fraseChar = " + fraseChar);
+        
+        var entrada = new Scanner(System.in);
+        System.out.println("Digite un caracter: ");
+        fraseChar = entrada.nextLine().charAt(0); //El caracter ingresado será de tipo string
+        //con el método .charAt(indice) convertimos el str a char
+        System.out.println("fraseChar = " + fraseChar);
         
     }
 
