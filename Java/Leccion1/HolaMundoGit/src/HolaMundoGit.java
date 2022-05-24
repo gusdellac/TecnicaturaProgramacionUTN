@@ -232,6 +232,7 @@ public class HolaMundoGit {
         */
         
         //Conversión de tipos primitivos 
+        /*
         var edadTexto = String.valueOf(10); // Int a String. Clase String. método valueOf(int)
         System.out.println("edadTexto = " + edadTexto);
         
@@ -245,6 +246,60 @@ public class HolaMundoGit {
         //con el método .charAt(indice) convertimos el str a char
         System.out.println("fraseChar = " + fraseChar);
         
+        //string a boolean
+        boolean varBoolean = Boolean.parseBoolean("true");
+        System.out.println("varBoolean = " + varBoolean);
+        */
+        
+        //la inferencia de tipos solo se puede hacer con una variable
+        /*
+        int num1 = 5, num2 = 4; // inicializamos mas de una variable en la misma línea
+        //es necesario declarar el tipo de dato de las variables, no se puede inferir (en este caso int)
+        
+        var solucion = num1 + num2;
+        System.out.println("solucion de la suma = " + solucion);
+        
+        solucion = num1 - num2;
+        System.out.println("solucion de la resta = " + solucion);
+        
+        solucion = num1 * num2;
+        System.out.println("solucion de la multiplicación = " + solucion);
+        
+        solucion = num1 / num2;
+        System.out.println("solucion de la división = " + solucion);
+        
+        var solucion2 = 3.4 / num2; //infiere dato tipo double
+        System.out.println("solucion2 = " + solucion2);
+        
+        solucion = num1 % num2; //guarda el residuo entero de la división
+        System.out.println("solucion = " + solucion);
+        
+        //Cuando en una estructura if/else se utiliza solo una línea de código en cada bloque
+        //no es necesario utilizar las llaves de apertura y cierre
+        if (num1 % 2 == 0){
+            System.out.println("El número es par");
+        } else {
+            System.out.println("El número es impar");
+        }
+        */
+        
+        //operadores asignación
+        
+        int varNum1 = 1, varNum2 = 4;
+        int varNum3 = varNum1 + 6 - varNum2; 
+        System.out.println("varNum3 = " + varNum3);
+        
+        varNum1 += 1; //Incrementa la variable en 1 (varNum1 = varNum1 + 1)
+        System.out.println("varNum1 = " + varNum1);
+        // +=     -=    *=     /=    %=
+        varNum2 -=2;
+        System.out.println("varNum2 = " + varNum2);
+        varNum1 *=5;
+        System.out.println("varNum1 = " + varNum1);
+        varNum3 /=4;
+        System.out.println("varNum3 = " + varNum3);
+        varNum1 %= 6;
+        System.out.println("varNum1 = " + varNum1);
     }
 
 }
