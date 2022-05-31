@@ -284,7 +284,7 @@ public class HolaMundoGit {
         */
         
         //operadores asignación
-        
+        /*
         int varNum1 = 1, varNum2 = 4;
         int varNum3 = varNum1 + 6 - varNum2; 
         System.out.println("varNum3 = " + varNum3);
@@ -300,6 +300,130 @@ public class HolaMundoGit {
         System.out.println("varNum3 = " + varNum3);
         varNum1 %= 6;
         System.out.println("varNum1 = " + varNum1);
+        */
+        
+        //Operadores Unarios : Cambio de Signo
+        /*
+        var varA = 7;
+        var varB = -varA; //cambio de signo /(pasa a ser negativo)
+        System.out.println("varA = " + varA);
+        System.out.println("varB = " + varB);
+        
+        //Operador de Negación
+        var varC = true;
+        var varD = !varC; //niega el valor (pasa de true a false)
+        System.out.println("varC = " + varC);
+        System.out.println("varD = " + varD);
+        
+        //Operadores Unarios de incremento: Preincremento
+        var varE = 9; //modificamos su valor
+        var varF = ++varE; //incrementamos en uno la variable varE
+        System.out.println("varE = " + varE); // se imprime 10
+        System.out.println("varF = " + varF); // se imprime 10
+        
+        //Postincremento (el símbolo va despues de la variable)
+        var varG = 3; //se modifica el valor
+        var varH = varG++;  //se asigna el valor varG = 3 sin incremento
+        System.out.println("varG = " + varG); //se imprime 4
+        System.out.println("varH = " + varH); //se imprime 3
+        
+        //Operadores Unarios de decremento: Predecremento
+        var varI =4;
+        var varJ = --varI;
+        System.out.println("varI = " + varI); //3
+        System.out.println("varJ = " + varJ); //3
+        
+        //Postdecremento
+        var varK = 8;
+        var varL = varK--;
+        System.out.println("varK = " + varK); //7
+        System.out.println("varL = " + varL); //8
+        
+        //Operadores de igualdad = !=
+        var aNum = 5;
+        var bNum = 4;
+        var cNum = (aNum == bNum); //operador de igualdad: se asigna un valor booleano
+        System.out.println("cNum = " + cNum);
+        
+        var dNum = aNum != bNum; //operador de desigualdad
+        System.out.println("dNum = " + dNum);
+        
+        //String
+        var cadenaA = "Hello";
+        var cadenaB = "bye bye";
+        var cVar = cadenaA == cadenaB; //compara referencias no el contenido de las cadenas
+        System.out.println("cVar = " + cVar);
+        
+        //forma correcta
+        var fVar = cadenaA.equals(cadenaB); //método para comparar strings, devuelve dato booleano
+        System.out.println("fVar = " + fVar);
+        
+        //Operadores relacionales > < >= <=
+        var gVar = aNum > bNum;
+        System.out.println("gVar = " + gVar);
+        
+        gVar = aNum < bNum;
+        System.out.println("gVar = " + gVar);
+        
+        gVar = aNum >= bNum;
+        System.out.println("gVar = " + gVar);
+        
+        gVar = aNum <= bNum;
+        System.out.println("gVar = " + gVar);
+        
+        if (aNum % 2 == 0) {
+            System.out.println("El número es par");
+        } else {
+            System.out.println("El número es impar");
+        }
+        */
+        //Operadores condicionales (and &&  -  or ||)
+        /*
+        var valorA = 7;
+        var valorMinimo = 0; //rango del 0 al 10
+        var valorMaximo = 10;
+        var respuesta = valorA >= 0 && valorA <= 10;
+        
+        if(respuesta) {
+            System.out.println("Está dentro del rango establecido");    
+        }else{
+            System.out.println("Esta fuera del rango establecido");
+        }
+        
+        var vacaciones = true;
+        var diaLibre = false;
+        if (vacaciones || diaLibre){
+            System.out.println("Papá puede asistir al juego de su hijo");
+        }     
+        else{
+             System.out.println("Papá no pude asistir al juego de su hijo");
+        }
+        
+        //Operador ternario
+        var resultadoT = (5 > 4)? "Verdadero" : "Falso"; 
+        System.out.println("resultadoT = " + resultadoT);
+        
+        var numeroT = 7;
+        resultadoT = (numeroT%2 == 0)? "Par":"Impar"; //se evalúa la condición, si se cumple se asigna el primer
+        //valor despues del signo ? , si no se cumple se asgina el segundo valor despues del signo :
+        System.out.println("resultadoT = " + resultadoT);
+        */
+        
+        //Prioridad operadores
+        /*
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--;
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+        
+        var solucionAritmetica = 4 + 5 * 6 / 3;
+        System.out.println("solucionAritmetica = " + solucionAritmetica);
+             
+        solucionAritmetica = (4+5) * 6 / 3;
+        */
+        
     }
 
 }
