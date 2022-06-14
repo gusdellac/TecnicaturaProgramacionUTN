@@ -12,7 +12,7 @@ public class Ejercicio7 {
         System.out.print("Digite el precio: ");
         float precioAuto = Float.parseFloat(input.nextLine());
         float totalAutosVendidos = autosVendidos * precioAuto;
-        var salarioEmpleado = salarioConstante + (autosVendidos * 150) + (totalAutosVendidos * 0.05);
+        float salarioEmpleado = salarioConstante + (autosVendidos * 150) + (totalAutosVendidos * 0.05f);
         System.out.println("Salario mensual del vendedor: " + salarioEmpleado);
     }
     
