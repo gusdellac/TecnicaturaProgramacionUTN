@@ -5,8 +5,11 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
+        
+        //Con if/ else
+        System.out.println("Sentencia if/else");
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Digite un número entre 0 y 10: ");
+        System.out.print("Digite un número entero entre 0 y 10: ");
         var calificacion = Integer.parseInt(entrada.nextLine());
         if (calificacion >= 9 && calificacion <= 10){
             System.out.println("A");
@@ -26,6 +29,32 @@ public class Ejercicio3 {
         else {
             System.out.println("Fuera de rango");
         }
+        
+        //Con switch
+        var notaSegunCalificacion = "Calificacion fuera de rango";
+        System.out.println("\nSentencia switch");
+        System.out.println("Digite un número entero entre 0 y 10: ");
+        calificacion = Integer.parseInt(entrada.nextLine());
+        switch(calificacion){
+            case 10: case 9:
+                notaSegunCalificacion = "A";
+                break;
+            case 8:
+                notaSegunCalificacion = "B";
+                break;
+            case 7:
+                notaSegunCalificacion = "C";
+                break;
+            case 6:
+                notaSegunCalificacion = "D";
+                break;
+            case 5: case 4: case 3: case 2: case 1:
+                notaSegunCalificacion = "F";
+                break;   
+        }
+        System.out.println("Su calificación es: " + notaSegunCalificacion);
+        
+        
     }
     
 }
