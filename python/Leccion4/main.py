@@ -219,3 +219,40 @@ print(diccionario)
 # Eliminar diccionario
 del diccionario
 
+
+# Pilas usando listas (forma de trabajo)
+pila = [1, 2, 3]
+
+# Agregar elementos a la pila por el final. Método append()
+pila.append(4)
+pila.append(5)
+print(pila)
+
+# Sacamos elementos desde el final. Método pop()
+elementoBorrado = pila.pop()  # Quita el último elemento y lo guarda en la variable
+print(f'Sacamos el elemento {elementoBorrado}')
+print(f'La pila ahora quedo así: {pila}')
+
+# Colas usando listas (forma de trabajo)
+# Estructura de datos de tipo fifo(first input / first output)
+
+cola = ['Ariel', 'Osvaldo', 'Liliana', 'Pilar']
+
+# Agregamos elementos al final de la cola
+cola.append('Natalia')
+cola.append('José')
+print(cola)
+
+# Sacamos elementos de la cola
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
