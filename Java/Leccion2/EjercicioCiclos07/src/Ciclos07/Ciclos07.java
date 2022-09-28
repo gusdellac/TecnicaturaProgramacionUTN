@@ -13,7 +13,7 @@ public class Ciclos07 {
         float promedio = 0;
         System.out.println("Digite un número: ");
         numero = Integer.parseInt(entrada.nextLine());
-        while(numero >= 0){
+        while(numero > 0){
             suma += numero;
             conteo++;
             System.out.println("Digite otro número: ");
