@@ -70,3 +70,50 @@ def listarNombres(*nombres):  # *nombres se utiliza si desconocemos la cantidad 
         print(nombre)
 listarNombres("Gustavo", "Ariel", "Ricardo", "Pedro", "Matias")
 listarNombres("Marcos", "Daniel", "Romina", "Pepe", "Marcela", "Carlos")
+
+# Función con argumentos variables de tipo llave, valor
+
+def listarTerminos(**terminos):  # **kwargs (key, word, argument)
+    for llave, valor in terminos.items():
+        print(f"{llave} : {valor}")
+listarTerminos(IDE="Integrated Development Environment", PK="Primary Key")
+
+# Función con argumentos definidos nombre, argumentos variables *args y argumentos **kwargs
+def listar_terminos_2(nombre, *args, **kwargs):
+    print(nombre)
+    for nombres in args:
+        print(nombres)
+    for llave, valor in kwargs.items():
+        print(f"{llave} : {valor}")
+listaNombres2 = ["Ariel", "Roman", "Lionel"]
+dicNombres = {
+    1: {"Nombre": "Pedro", "Apellido": "Gonzalez"},
+    2: {"Nombre": "Ricardo", "Apellido": "Martinez"},
+    3: {"Nombre": "Roberto", "Apellido": "Sanchez"}
+}
+listar_terminos_2("Gustavo", listaNombres2, dicNombres)
+
+#########################
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+nombres2 = ["Tito", "Pedro", "Carlos"]
+desplegarNombres(nombres2)
+desplegarNombres("Carla")  # se itera el string
+# desplegarNombres(10,11) # Tipo int , no es un objeto iterable
+desplegarNombres((10, 11))  # La convertimos a una tupla
+desplegarNombres([10, 11])  # La convertimos en una lista
+
+#########################
+# Funciones recursivas
+
+def factorial(numero):
+    if numero == 0 or numero == 1:  # Caso Base
+        return 1
+    else:
+        return numero * factorial(numero-1)  # Caso Recursivo
+
+factorialACalcular = 5
+resultado = factorial(factorialACalcular)
+print(f"El factorial de {factorialACalcular } es: {resultado}")
