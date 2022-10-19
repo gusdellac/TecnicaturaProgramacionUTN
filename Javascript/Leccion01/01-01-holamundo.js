@@ -1,3 +1,5 @@
-var nombre = "Gustavo";
-var apellido = "De Llac";
-console.log(nombre,apellido);
+
+var nombre = "Ariel";
+nombre = "Alberto \nAriel\n";
+var apellido = "Betancud";
+console.log(nombre+apellido);
