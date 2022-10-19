@@ -4,10 +4,10 @@ class Encapsulamiento:
         self.__apellido = apellido
         self.dni = dni
 
-    def getApellido(self):  #getter __apellido (ver si esta sintaxis es correcta)
+    def getApellido(self):  #getter __apellido (sintaxis incorrecta)
         return self.__apellido
 
-    def setApellido(self, nombre):  # setter __apellido (ver si esta sintaxis es correcta)
+    def setApellido(self, nombre):  # setter __apellido (sintaxis incorrecta)
         self._nombre = nombre
 
     def mostrarDetalle(self):
