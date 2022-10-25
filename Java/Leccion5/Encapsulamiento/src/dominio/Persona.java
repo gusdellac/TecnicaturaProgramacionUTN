@@ -36,5 +36,14 @@ public class Persona {
         this.eliminado = eliminado;
     }
     
-    
+    //sobreescribimos el método toString() de la clase Object
+    //este método nos retornará un String con los atributos y valores del
+    //objeto instanciado
+    @Override
+    public String toString(){ //
+        return "Persona [nombre: "+this.nombre+
+                ", sueldo: "+this.sueldo+
+                ", eliminado: "+this.eliminado+
+                "]";
+    }
 }
