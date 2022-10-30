@@ -45,11 +45,11 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    @Override
-    public String toString() {
-        return "Persona{" + "idPersona=" + idPersona + ", nombre=" + nombre + '}';
-    }
-    
+//    @Override
+//    public String toString() {
+//        return "Persona{" + "idPersona=" + idPersona + ", nombre=" + nombre + '}';
+//    }
+//    
     
 
     
