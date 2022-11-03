@@ -29,5 +29,5 @@ print(f"Objeto vehiculo1: {vehiculo1}")
 auto1 = Auto("Rojo", 4, "200km/h")
 print(f"Objeto auto1: {auto1}")
 
-bicicleta1 = Bicicleta("Azul", 2, "Mountainbike")
-print(f"Objeto bicicleta1: {bicicleta1}")
+# bicicleta1 = Bicicleta("Azul", 2, "Mountainbike")
+# print(f"Objeto bicicleta1: {bicicleta1}")
