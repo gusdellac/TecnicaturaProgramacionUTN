@@ -17,7 +17,7 @@ public class Persona {
         this.nombre = nombre;
     }
     
-    //constructor con múltiples argumentos
+    //constructor con múltiples argumentos (sobrecarga)
     public Persona(String nombre, char genero, int edad, String direccion) {
         this.nombre = nombre;
         this.genero = genero;
