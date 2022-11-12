@@ -6,7 +6,7 @@ class Rectangulo(FiguraGeometrica, Color):
         FiguraGeometrica.__init__(self, alto, ancho)
         Color.__init__(self, color)
 
-    def calcular_area(self):
+    def calcular_area(self):  # método abstracto implementado
         return self.alto * self.ancho
 
     def __str__(self):

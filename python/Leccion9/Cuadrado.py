@@ -13,7 +13,7 @@ class Cuadrado(FiguraGeometrica, Color):  # clase Cuadrado extiende de FiguraGeo
         FiguraGeometrica.__init__(self, alto, ancho)  # referenciamos a la clase padre con su nombre
         Color.__init__(self, color)
 
-    def calcular_area(self):
+    def calcular_area(self):  # método abstracto implementado
         return self.alto * self.ancho
 
     def __str__(self):
