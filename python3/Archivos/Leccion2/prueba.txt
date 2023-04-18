@@ -1,0 +1,13 @@
+Programamos con diferentes tipos de archivos, ahora en txt.
+Los acentos son importantes para las palabras
+como por ejemplo: acción, ejecución y producción
+Acciones sobre un archivo: 
+r - read leer, 
+a append anexar, 
+w - write escribir, 
+x - create crear archivo, 
+t - text, 
+b - archivos binarios, 
+w+ leer y escribir, 
+r+ ver
+Con esto terminamos
