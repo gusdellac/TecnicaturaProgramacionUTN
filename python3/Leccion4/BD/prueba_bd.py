@@ -10,11 +10,25 @@ conexion = psycopg2.connect(
     database='test_bd'
 )
 # print(conexion)
-cursor = conexion.cursor()  # metodo cursor retorna un objeto que nos permite el acceso a datos de una db
-query = 'SELECT * FROM persona'  # guardamos la consulta sql como string en variable query
-cursor.execute(query)  # metodo execute del objeto cursor nos permite realizar la consulta sql
-registros = cursor.fetchall()  # metodo fetchall retorna un array con los datos devueltos por la consulta anterior
-print(registros)
+# cursor = conexion.cursor()  # metodo cursor retorna un objeto que nos permite el acceso a datos de una db
 
-cursor.close()
-conexion.close()
+# conexion a bd usando with
+try:
+    with conexion:
+        with conexion.cursor() as cursor:
+            query = 'SELECT * FROM persona WHERE id_persona = %s'  # guardamos la
+            # consulta sql como string en variable query // %s placeholder , enviamos un parametro en la query
+            id_persona = input("Digite un numero para el id_persona: ")
+            cursor.execute(query, (id_persona,))  # metodo execute del objeto // pasamos la query y el parametro dentro
+            # de una tupla
+
+            # cursor nos permite realizar la consulta sql
+            # registros = cursor.fetchall()  # metodo fetchall retorna un array con los datos devueltos por la consulta
+            registros = cursor.fetchone()  # retorna una tupla
+            # anterior
+            print(registros)
+            # al utilizar with no es necesario cerrar el cursor ( cursor.close() )
+except Exception as e:
+    print(f"Ocurrio un error: {e}")
+finally:
+    conexion.close()  # cerramos conexion a bd
