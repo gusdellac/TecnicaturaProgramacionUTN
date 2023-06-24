@@ -3,3 +3,95 @@
 01:00:24 PM:WARNING [logger_base.py:17] Mensaje a nivel warning
 01:00:24 PM:ERROR [logger_base.py:18] Mensaje a nivel error
 01:00:24 PM:CRITICAL [logger_base.py:19] Mensaje a nivel critical
+12:44:22 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1, 
+            Nombre: Juan, 
+            Apellido: Perez, 
+            Email: jperez@mail.com
+12:44:40 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1, 
+            Nombre: Juan, 
+            Apellido: Perez, 
+            Email: jperez@mail.com
+        
+12:49:24 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1, 
+            Nombre: Juan, 
+            Apellido: Perez, 
+            Email: jperez@mail.com
+        
+12:55:39 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1, 
+            Nombre: Juan, 
+            Apellido: Perez, 
+            Email: jperez@mail.com
+        
+12:55:39 PM:DEBUG [Persona.py:55] 
+            Id Persona: None, 
+            Nombre: Jose, 
+            Apellido: Lopez, 
+            Email: ljose@mail.com
+        
+12:55:39 PM:DEBUG [Persona.py:57] 
+            Id Persona: 1, 
+            Nombre: Juan, 
+            Apellido: Perez, 
+            Email: jperez@mail.com
+        
+12:56:05 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1, 
+            Nombre: Juan, 
+            Apellido: Perez, 
+            Email: jperez@mail.com
+        
+12:56:05 PM:DEBUG [Persona.py:55] 
+            Id Persona: None, 
+            Nombre: Jose, 
+            Apellido: Lopez, 
+            Email: ljose@mail.com
+        
+12:56:05 PM:DEBUG [Persona.py:57] 
+            Id Persona: 1, 
+            Nombre: None, 
+            Apellido: None, 
+            Email: None
+        
+12:43:42 PM:DEBUG [Conexion.py:24] Conexion Exitosa: <connection object at 0x000002092C8C3120; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+12:47:07 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:47:47 PM:DEBUG [Conexion.py:24] Conexion Exitosa: <connection object at 0x000001FF8F753120; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+12:47:55 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:49:04 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:49:24 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:53:34 PM:DEBUG [Conexion.py:24] Conexion Exitosa: <connection object at 0x0000028456D23120; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+12:53:55 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:54:19 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:55:53 PM:DEBUG [Conexion.py:24] Conexion Exitosa: <connection object at 0x000001CAD9113120; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+12:55:53 PM:DEBUG [Conexion.py:37] Se abrio correctamente el cursor: <cursor object at 0x000001CAD9713840; closed: 0>
+12:57:16 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:57:29 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:57:48 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:57:48 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+12:57:48 PM:ERROR [Conexion.py:40] Ocurrio un error: 'NoneType' object has no attribute 'cursor'
+12:58:57 PM:DEBUG [Conexion.py:24] Conexion Exitosa: <connection object at 0x000002228D6D3120; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+12:58:57 PM:DEBUG [Conexion.py:37] Se abrio correctamente el cursor: <cursor object at 0x000002228E063840; closed: 0>
+01:00:15 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+01:00:15 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+01:00:15 PM:ERROR [Conexion.py:40] Ocurrio un error: 'NoneType' object has no attribute 'cursor'
+01:01:15 PM:ERROR [Conexion.py:27] Ocurri un error: 
+01:01:40 PM:ERROR [Conexion.py:27] Ocurri un error: 
+01:02:05 PM:ERROR [Conexion.py:27] 
+01:02:32 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+01:02:37 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+01:04:20 PM:DEBUG [Conexion.py:24] Conexion Exitosa: <connection object at 0x0000024DD3E23120; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+01:04:20 PM:DEBUG [Conexion.py:37] Se abrio correctamente el cursor: <cursor object at 0x0000024DD4773840; closed: 0>
+01:04:33 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+Traceback (most recent call last):
+  File "C:\Users\gusta\TecnicaturaGit\python3\Leccion7\capa_datos_persona\Conexion.py", line 19, in obtenerConexion
+    cls._conexion = bd.connect(host=cls._HOST,
+  File "C:\Users\gusta\TecnicaturaGit\python3\Leccion7\venv\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError
+01:07:46 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+01:09:30 PM:ERROR [Conexion.py:27] Ocurrio un error: 
+01:10:02 PM:DEBUG [Conexion.py:24] Conexion Exitosa: <connection object at 0x00000227498C3120; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+01:10:02 PM:DEBUG [Conexion.py:37] Se abrio correctamente el cursor: <cursor object at 0x0000022749EC3840; closed: 0>
