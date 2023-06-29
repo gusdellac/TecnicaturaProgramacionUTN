@@ -1,8 +1,9 @@
-import logging as log
+import logging as log  # importamos paquete logging y renombramos con alias log
 
 # docs.python.org/3/howto/logging.html
 # llamamos una configuracion basica
 
+# configuracion del log
 log.basicConfig(level=log.DEBUG,
                 format="%(asctime)s:%(levelname)s [%(filename)s:%(lineno)s] %(message)s",
                 datefmt="%I:%M:%S %p",
@@ -11,6 +12,7 @@ log.basicConfig(level=log.DEBUG,
                     log.StreamHandler()
                 ])
 
+# test de los niveles del log
 if __name__ == "__main__":
     log.debug("Mensaje a nivel debug")
     log.info("Mensaje a nivel info")
