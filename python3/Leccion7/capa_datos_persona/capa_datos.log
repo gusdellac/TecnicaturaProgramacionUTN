@@ -686,3 +686,20 @@ psycopg2.OperationalError
 06:04:05 PM:INFO [menu_app_usuario.py:17] Usuario: 6 agus 5689
 06:04:05 PM:INFO [menu_app_usuario.py:17] Usuario: 7 pedro 5464
 06:04:09 PM:INFO [menu_app_usuario.py:37] Salimos de la aplicacion, hasta pronto!!!
+11:44:32 AM:INFO [menu_app_usuario.py:17] Usuario: 1 pedro 369
+11:44:32 AM:INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+11:44:32 AM:INFO [menu_app_usuario.py:17] Usuario: 6 agus 5689
+11:44:32 AM:INFO [menu_app_usuario.py:17] Usuario: 7 pedro 5464
+11:44:48 AM:INFO [menu_app_usuario.py:23] Usuario insertado: 1
+11:44:52 AM:INFO [menu_app_usuario.py:17] Usuario: 1 pedro 369
+11:44:52 AM:INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+11:44:52 AM:INFO [menu_app_usuario.py:17] Usuario: 6 agus 5689
+11:44:52 AM:INFO [menu_app_usuario.py:17] Usuario: 7 pedro 5464
+11:44:52 AM:INFO [menu_app_usuario.py:17] Usuario: 8 gustavo 1234
+11:45:12 AM:INFO [menu_app_usuario.py:30] Usuario actualizado: 1
+11:45:14 AM:INFO [menu_app_usuario.py:17] Usuario: 1 pedro 369
+11:45:14 AM:INFO [menu_app_usuario.py:17] Usuario: 2 carlos 1234
+11:45:14 AM:INFO [menu_app_usuario.py:17] Usuario: 6 agus 5689
+11:45:14 AM:INFO [menu_app_usuario.py:17] Usuario: 7 pedro 5464
+11:45:14 AM:INFO [menu_app_usuario.py:17] Usuario: 8 gustavo 1234
+11:45:18 AM:INFO [menu_app_usuario.py:37] Salimos de la aplicacion, hasta pronto!!!
